@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    
+    <style>
+        input[type="text"], input[type="date"], textarea {
+          width: 100%;
+          box-sizing: border-box;
+        }
+        textarea {
+          height: 100px;
+        }
+      </style>
+
+</head>
+<body align="center">
+    <h1>Form Input Mahasiswa Baru</h1>
+    <table align="center" cellpadding="10" cellspacing="1">
+        <form action="Berhasil.html" method="get">
+            <tr>
+            <td align="left"><label for="nim">NIM:</label></td>
+            <td align="left"><input type="text" id="nim" name="nim" placeholder="Nomor Induk Mahasiswa"></td>
+            </tr>
+
+            <tr>
+            <td align="left"><label for="nama">Nama:</label></td>
+            <td align="left"><input type="text" id="nama" name="nama" cols="30" placeholder="Nama Lengkap"></td>
+            </tr>
+
+            <tr>
+            <td align="left"><label for="tempatLahir">Tempat Lahir:</label></td>
+            <td align="left"><input type="text" id="tempatLahir"  cols="30" name="tempatLahir" placeholder="Tempat Lahir"></td>
+            </tr>
+
+            <tr>
+            <td align="left"><label for="tanggalLahir">Tanggal Lahir:</label></td>
+            <td align="left"><input type="date" id="tanggalLahir"  cols="30" name="tanggalLahir"></td>
+            </tr>
+
+            <tr>
+            <td align="left"><label for="alamat">Alamat Lengkap:</label></td><br>
+            <td align="left"><textarea id="alamat" name="alamat" rows="4" cols="30" placeholder="Alamat Lengkap"></textarea></td>
+            </tr>
+
+            <tr>
+            <td align="left"><label>Jenis Kelamin:</label></td>
+            <td align="left"><input type="radio" id="pria" name="jenisKelamin" value="pria">
+            <label for="pria">Pria</label>
+            <input type="radio" id="wanita" name="jenisKelamin" value="wanita">
+            <label for="wanita">Wanita</label></td>
+            </tr>
+
+            <tr>
+            <td align="left"><label for="jurusan">Jurusan:</label></td>
+            <td align="left"><select id="jurusan" name="jurusan">
+                <option value="teknikInformatika">Teknik Informatika</option>
+                <option value="sistemInformasi">Sistem Informasi</option>
+                <option value=" Hubungan Internasional"> Hubungan Internasional</option>
+                <option value="Manajemen Bisnis">Manajemen Bisnis</option>
+            </select></td>
+            </tr>
+
+            <tr>
+            <td align="left"><label>Fasilitas:</label></td>
+            <td align="left"><input type="checkbox" id="komputer" name="fasilitas" value="komputer">
+            <label for="komputer">Komputer</label>
+            <input type="checkbox" id="kabelLan" name="fasilitas" value="kabelLan">
+            <label for="kabelLan">Kabel Lan</label>
+            <input type="checkbox" id="fiberOptik" name="fasilitas" value="fiberOptik">
+            <label for="fiberOptik">Fiber Optik</label>
+            <input type="checkbox" id="mikrotik" name="fasilitas" value="mikrotik">
+            <label for="mikrotik">Mikrotik</label></td>
+            </tr>
+
+            <tr>
+            <td align="left"><input type="submit" value="Submit"></td>
+            <td align="left"><input type="reset" value="Clear"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
